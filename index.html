@@ -1,0 +1,316 @@
+<DOCUTYPE html>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=B612+Mono|Fira+Sans|Noto+Sans+HK|Open+Sans|Roboto+Condensed|Slabo+27px&display=swap"
+rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--import stylesheets -->
+
+<style>
+
+body, html{
+  top:0px;
+  bottom:0px;
+  padding-left:10px;
+  padding-right:10px;
+  font-size:18px;
+  color:black;
+  /*background: linear-gradient(125.8deg,
+    rgba(245,247,250,1) 6.8%,
+    rgba(184,198,219,1) 59.5%);*/
+}
+
+*{
+  box-sizing:border-box;
+}
+
+/*Desktop 992*/
+@media (min-width: 992px){
+  .box{
+    background-color:#808080;
+    /*background-image: linear-gradient(299.4deg,
+      rgba(252,226,237,1) 45.4%,
+      rgba(221,243,246,1) 62.3% );*/
+    display:inline-block;
+    position:relative;
+    border:1px solid black;
+    float:left;
+    align-content: center;
+    overflow:scroll;
+    margin:10px;
+  }
+
+  .box-lg-1{
+    width:31%;
+  }
+  .box-lg-2{
+    width:75%;
+  }
+  .box-lg-3{
+    width:100%;
+  }
+}
+
+/*Tablet min 768 max 991 */
+@media (max-width:991px){
+  .box{
+    background-color:#808080;
+  /*background-image: linear-gradient(89.9deg,
+    rgba(253,210,220,1) 5.3%,
+    rgba(253,253,225,1) 101.4% );*/
+  display:inline-block;
+  position:relative;
+  border:1px solid black;
+  align-content: center;
+  overflow:scroll;
+  margin:10px;
+}
+  .box-md-1{
+    width:25%;
+  }
+  .box-md-2{
+    width:47%;
+  }
+  .box-md-3{
+    width:100%;
+    }
+}
+
+/*mobile max 767*/
+@media (max-width:767px){
+  .box{
+    background-color:#808080;
+ /* background-image: radial-gradient(circle 651px at 7% 22.8%,
+    rgba(232,249,255,1) 10.5%,
+    rgba(229,199,206,1) 51.3%,
+    rgba(219,199,229,1) 97.6% );*/
+  display:block;
+  border:1px solid black;
+  align-content: center;
+  overflow:scroll;
+  margin:10px;
+}
+
+  .box-sm-1{
+    width:25%;
+  }
+  .box-sm-2{
+    width:50%;
+  }
+  .box-sm-3{
+    width:100%;
+    }
+}
+
+/*HEADINGS */
+.heading{
+  position:relative;
+  display:inline-block;
+}
+
+/*SECTIONS */
+.sections{
+  align-content:center;
+  align-items: center;
+}
+
+/*SECTION-BOX1 - contains main text content */
+.box1{
+  float:right;
+  padding:0px;
+  margin:-7px -15px 0px;
+  width:150px;
+  height:40px;
+  border:1px solid black;
+   background-color:pink;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*SECTION-BOX2 - contains section titles */
+/*Green, Orange, Purple*/
+.box2{
+  float:right;
+  padding:10px;
+  margin:-7px -15px 0px;
+  width:150px;
+  height:40px;
+  border:1px solid black;
+  background-color:tomato;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*SECTION-BOX3 */
+.box3{
+  float:right;
+  padding:10px;
+  margin:-7px -15px 0px;
+  width:150px;
+  height:40px;
+  border:1px solid black;
+  background-color:yellow;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*SECTION TITLE 
+.sectionTitles{
+float:right;
+position:relative;
+display:block;
+border:none;
+}
+
+header{
+  position:relative;
+}
+
+ul{
+  list-style:none;
+  text-align: center
+}
+
+li{
+  display:inline;
+  position:relative;
+  margin:10px;
+  padding:5px;
+  background-image: radial-gradient(circle 71px at 7% 52.8%,
+    rgba(232,249,255,1) 10.5%,
+    rgba(229,199,206,1) 51.3%,
+    rgba(219,199,229,1) 97.6% );
+}*/
+
+/* HEADER/TITLES*/
+h1{
+  font-family:B612 Mono, serif;
+  font-size:40px;
+  text-align:center;
+}
+
+/*SUBHEADINGS */
+h2{
+  font-family:Fira Sans, serif;
+  font-size:18px;
+}
+
+/* MAIN TEXT CONTENT */
+h3{
+  font-family:Slabo, serif;
+  font-size:18px;
+}
+
+/* FOOTER TEXT CONTENT */
+h4{
+
+}
+    /* dont edit this selector. these settings should keep the logo always fitting by default. see below examples for how to edit  */
+
+
+
+</style>
+
+<body>
+
+   <!--put in Head--> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--put in Nav-->
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Food,LLC</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Chicken</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Beef</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sushi</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+<header>
+<h1>Our Menu
+</h1>
+</header>
+<!-- SECTION 1 -->
+<div class="box box-lg-1 box-md-2 box-sm-3">
+<fieldset style="border:none">
+  <div class="box1">Chicken</div></fieldset>
+  <h3>Lorem ipsum dolor sit amet, ligula suspendisse
+    nulla pretium, rhoncus tempor placerat fermentum,
+    enim integer ad vestibulum volutpat. Nisl rhoncus
+    turpis est, vel elit, congue wisi enim nunc ultricies
+    sit, magna tincidunt. Maecenas aliquam maecenas ligula
+    nostra, accumsan taciti. Sociis mauris in integer, a
+    dolor netus non dui aliquet, sagittis felis sodales,
+    dolor sociis mauris, vel eu libero cras. Interdum at.
+    Eget habitasse elementum est, ipsum purus pede porttitor
+    class, ut adipiscing, aliquet sed auctor, imperdiet arcu
+    per diam dapibus libero duis. Enim eros in vel, volutpat
+    nec eros. Dignissim cras urna, ante convallis turpis duis
+    lectus sed aliquet, at tempus et ultricies. Eros sociis
+    cursus nec hamenaeos dignissimos imperdiet.
+    </h3>
+</div>
+
+<!-- SECTION 2 -->
+<div class="box box-lg-1 box-md-2 box-sm-3">
+<fieldset style="border:none">
+  <div class="box2">Beef</div></fieldset>
+  <h3>Vestibulum commodo nisl, luctus augue amet quis aenean
+     maecenas sit, donec velit iusto, morbi felis elit et
+     nibh. Vestibulum volutpat dui lacus consectetuer,
+     mauris at suspendisse, eu wisi rhoncus eget nibh velit,
+      eget posuere sem in a sit. Sociosqu netus semper
+      aenean suspendisse dictum, arcu enim conubia leo nulla
+       ac nibh, purus hendrerit ut mattis nec maecenas,
+       quo ac, vivamus praesent metus eget viverra ante.
+       Natoque placerat sed sit hendrerit, dapibus velit
+       molestiae leo a, ut lorem sit et lacus aliquam.
+       Sodales nulla ante auctor excepturi wisi, dolor
+       lacinia dignissim eros condimentum dis pellentesque,
+       sodales lacus nunc, feugiat at. In orci ligula
+       suscipit luctus, sed dolor eleifend aliquam dui,
+        ut diam mauris, sollicitudin sed nisl lacus tempus.</h3>
+</div>
+<!-- SECTION 3 -->
+<div class="box box-lg-1 box-md-3 box-sm-3">
+<fieldset style="border:none">
+  <div class="box3">Sushi</div></fieldset>
+  <h3>
+  Ut facilisis ante in dui ac suscipit, turpis voluptatum
+  donec, fusce suspendisse, quasi luctus amet urna tempor
+  amet sit. Cras volutpat mattis hasellus justo massa sed,
+  feugiat nunc praesent. Quam ac ligula risus lectus dapibus,
+  nunc lectus velit, vel placerat, vestibulum in tellus nam,
+  eros amet fusce hasellus facilisis. Vehicula sed, class
+  dignissim ullamcorper eros, mauris consequat ut lacinia.
+  Aliquam amet est, quam leo maecenas mauris turpis leo
+  pharetra, vulputate lacus. Ad ornare donec, fringilla
+  feugiat augue imperdiet laoreet, ipsum enim sit lectus
+  felis at, aliquam blandit donec pede, luctus platea
+  etiam mauris ut. Dui vel diam, vitae et scelerisque
+  erat volutpat viverra velit, risus pellentesque tellus
+  nullam nibh, morbi posuere.</h3>
+</div>
+<footer>
+
+</footer>
+</body>
+
+</html>
